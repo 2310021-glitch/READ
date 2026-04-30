@@ -6,7 +6,7 @@ st.title("📖 쉬어읽기 변환기 (무료 버전)")
 # 구글 API 키 설정
 try:
     genai.configure(api_key=st.secrets["GOOGLE_API_KEY"])
-    model = genai.GenerativeModel('gemini-1.5-flash')
+   model = genai.GenerativeModel('gemini-1.5-flash-latest')
 except:
     st.error("Secrets에 'GOOGLE_API_KEY'를 등록해주세요.")
     st.stop()
